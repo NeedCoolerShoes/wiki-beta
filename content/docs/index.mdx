@@ -1,13 +1,13 @@
 ---
-title: Hello World
-description: Your first document
+title: NeedCoolerShoes Wiki
+description: Welcome to the NeedCoolerShoes Wiki!
+icon: BookOpen
 ---
-
-Welcome to the docs! You can start writing documents in `/content/docs`.
-
-## What is Next?
+import { Users, BookOpen, CircleQuestionMark, Pen, TriangleAlert } from 'lucide-react';
 
 <Cards>
-  <Card title="Learn more about Next.js" href="https://nextjs.org/docs" />
-  <Card title="Learn more about Fumadocs" href="https://fumadocs.vercel.app" />
+    <Card title="About" href="/docs/about" icon={<Users />}>About NeedCoolerShoes</Card>
+    <Card title="Guides" href="/docs/guides" icon={<CircleQuestionMark />}>Guides for using any part of the site</Card>
+    <Card title="Skin Editor" href="/docs/skin_editor" icon={<Pen />}>Information about the Skin Editor</Card>
+    <Card title="Troubleshooting" href="/docs/troubleshooting" icon={<TriangleAlert />}>Troubleshooting common issues</Card>
 </Cards>

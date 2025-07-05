@@ -1,0 +1,16 @@
+---
+title: Tools
+description: Tools available in the Skin Editor
+icon: DraftingCompass
+---
+import { DraftingCompass } from 'lucide-react';
+import { getPageTreePeers } from 'fumadocs-core/server';
+import { source } from '@/lib/source';
+
+<Cards>
+  {getPageTreePeers(source.pageTree, '/docs/skin_editor/tools').map((peer) => (
+    <Card key={peer.url} title={peer.name} href={peer.url}>
+      {peer.description}
+    </Card>
+  ))}
+</Cards>
