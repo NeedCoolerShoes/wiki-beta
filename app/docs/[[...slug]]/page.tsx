@@ -23,7 +23,6 @@ export default async function Page(props: {
     owner: 'needcoolershoes',
     repo: 'wiki-beta',
     path: `content/docs/${page.path}`,
-    token: process.env.GITHUB_TOKEN,
   });
 
   return (
