@@ -9,7 +9,7 @@ import { source } from '@/lib/source';
 
 <Cards>
   {getPageTreePeers(source.pageTree, '/docs/skin_editor/tools').map((peer) => (
-    <Card key={peer.url} title={peer.name} href={peer.url}>
+    <Card key={peer.url} title={peer.name} href={peer.url} icon={peer.icon}>
       {peer.description}
     </Card>
   ))}
